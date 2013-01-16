@@ -10,7 +10,7 @@ To begin using, you may want to host your CSS and Javascript files on your own p
 
 This is intended to be just a base to begin creating a theme from, hence why there is are no styles applied. See the demo here: http://boilerplatetheme.tumblr.com/
 
-## Common Problems **
+## Common Problems ##
 - As Google Analytics is a part of HTML5 Boilerplate, this has been included in the theme. **But will only be included if a Google Analytics Web Property ID is given as a meta tag.**
 
 For more info on creating Tumblr themes check out this guide: http://www.tumblr.com/docs/en/custom_themes
