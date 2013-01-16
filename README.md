@@ -1,4 +1,4 @@
-[Tumblr + HTML5 Boilerplate]
+Tumblr + HTML5 Boilerplate
 =====================
 
 Tumblrplate is a naked Tumblr theme built using HTML5 Boilerplate (http://html5boilerplate.com/)
