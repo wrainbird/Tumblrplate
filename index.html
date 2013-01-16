@@ -3,61 +3,54 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
-		<title>{block:TagPage}Posts Tagged &lsquo;{Tag}&rsquo; | {/block:TagPage}{block:PostSummary}{PostSummary} | {/block:PostSummary}{Title}</title>
-		
-		<link rel="shortcut icon" href="{Favicon}">
-	    <link rel="alternate" type="application/rss+xml" href="{RSS}">
-	    {block:Description}
-	    <meta name="description" content="{MetaDescription}" />
-	    {/block:Description}
-		
-		<meta name="text:Google Analytics Web Property ID" content=""/>
-		
-	    <link rel="stylesheet" href="http://static.tumblr.com/qxrkgx6/RWPmgn2qa/normalize.min.css">
-	    
-	    <!-- stylesheet goes here -->
-	    <!--<link rel="stylesheet" href="">-->
-	
-	    <script src="http://static.tumblr.com/qxrkgx6/LuRmgn2rm/modernizr-2.6.2.min.js"></script>
-	    
-	    </head>
-	    <body class="{block:IndexPage}index{/block:IndexPage} {block:PermalinkPage}permalink{/block:PermalinkPage}">
-	
-		
-		<style type="text/css">
-		
-		{CustomCSS}
-		
-		</style>
-	        
-    </head>
-    <body>
-    	
-    	<header>
-    	
-	    	<h1><a href="/">{Title}</a></h1>
-	
-	        {block:Description}
-	            <p id="description">{Description}</p>
-	        {/block:Description}
-	        
-	        
-	        {block:HasPages}
-	        	<nav class="nav">
-	
-					<ul>
-						{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
-					</ul>
-				
-	        	</nav>
-	        {/block:HasPages}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="text:Google Analytics Web Property ID" content=""/>
+        {block:Description}
+        <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+    
+        <title>{block:TagPage}Posts Tagged &lsquo;{Tag}&rsquo; | {/block:TagPage}{block:PostSummary}{PostSummary} | {/block:PostSummary}{Title}</title>
+        
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        <link rel="stylesheet" href="http://static.tumblr.com/qxrkgx6/RWPmgn2qa/normalize.min.css">
 
-    	</header>
-    	
+        <!-- stylesheet goes here -->
+        <!--<link rel="stylesheet" href="">-->
+
+        <script src="http://static.tumblr.com/qxrkgx6/LuRmgn2rm/modernizr-2.6.2.min.js"></script>
+        
+        <style type="text/css">
+            {CustomCSS}
+        </style>
+            
+    </head>
+
+    <body class="{block:IndexPage}index{/block:IndexPage} {block:PermalinkPage}permalink{/block:PermalinkPage}">
+        
+        <header>
+        
+            <h1><a href="/">{Title}</a></h1>
+    
+            {block:Description}
+                <p id="description">{Description}</p>
+            {/block:Description}
+            
+            
+            {block:HasPages}
+                <nav class="nav">
+    
+                    <ul>
+                        {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+                    </ul>
+                
+                </nav>
+            {/block:HasPages}
+
+        </header>
+        
         
 
         <section id="posts">
@@ -164,37 +157,37 @@
                 {/block:Answer}
                 
                 
-				{block:PermalinkPagination}
-					
-					
-			        {block:PreviousPost}
-			        	<a href="{PreviousPost}">Previous</a>
-			        {/block:PreviousPost}
-			        
-			        {block:NextPost}
-			            <a href="{NextPost}">Next</a>
-			        {/block:NextPost}
-					
-					
-				{/block:PermalinkPagination}
-				
+                {block:PermalinkPagination}
+                    
+                    
+                    {block:PreviousPost}
+                        <a href="{PreviousPost}">Previous</a>
+                    {/block:PreviousPost}
+                    
+                    {block:NextPost}
+                        <a href="{NextPost}">Next</a>
+                    {/block:NextPost}
+                    
+                    
+                {/block:PermalinkPagination}
+                
                 
             {/block:Posts}
         </section>
 
         <footer id="footer">
-        	
-        	{block:IndexPage}
-        	
-	        	{block:PreviousPage}
-	                <a href="{PreviousPage}">&#171; Previous</a>
-	            {/block:PreviousPage}
-	
-	            {block:NextPage}
-	                <a href="{NextPage}">Next &#187;</a>
-	            {/block:NextPage}
+            
+            {block:IndexPage}
+            
+                {block:PreviousPage}
+                    <a href="{PreviousPage}">&#171; Previous</a>
+                {/block:PreviousPage}
+    
+                {block:NextPage}
+                    <a href="{NextPage}">Next &#187;</a>
+                {/block:NextPage}
 
-        	{/block:IndexPage}
+            {/block:IndexPage}
 
             <a href="/archive">Archive</a>
             
